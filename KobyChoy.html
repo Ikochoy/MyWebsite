@@ -101,7 +101,7 @@
     	   right: 0;
     	   top: 0;
   	}
-  	.topnav.responsive a {
+  	.topnav.responsive li {
     	   float: none;
     	   display: block;
     	   text-align: left;
@@ -110,12 +110,12 @@
 	<script>
 	function myFunction() {
   		var x = document.getElementById("topnav");
-  		if (x.className === "navbar navbar-expand-sm navbar-dark justify-content-center topnav") {
+  		if (x.className == "navbar navbar-expand-sm navbar-dark justify-content-center topnav") {
     			x.className += " responsive";
   		} else {
     			x.className = "navbar navbar-expand-sm navbar-dark justify-content-center topnav";
   		}
-		}
+	    }
 	</script>
 </head>
 	<body>
@@ -141,9 +141,9 @@
                     <a class="nav-link" href="HonorsAndAwards.html">Honors and Awards</a></li>
                 <li class="nav-item icon"> 
                     <a class="nav-link" href="contactMe.html">Contact Me</a></li>
-	 <li class="nav-item">
-	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    	<i class="fa fa-bars"></i></a></li>
+	 			<li class="nav-item icon">
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    				<i class="fa fa-bars"></i></a></li>
 	</ul>
         </nav><br><br>
         <div class="container">
