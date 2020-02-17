@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Undergraduate Education</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/80f2a73f08.js"></script>
+    <script>
+        function showFall(){
+            var container = document.getElementById("content");
+            container.innerHTML = document.getElementById("2018Fall").innerHTML;
+            document.getElementById('2019Winter').style.display = "none";
+        }
+
+        function showWinter(){
+            var container = document.getElementById("content");
+            container.innerHTML = document.getElementById("2019Winter").innerHTML;
+            document.getElementById("2018Fall").style.display = "none";
+        }
+
+        $('document').ready(function() {
+            showFall();
+        });
+        </script>
+    <style type="text/css">
+        .d-inline {
+            display: inline-block;
+        }
+        body{
+            background-image: url(education.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            color: white;
+            font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+        }
+        .bt {
+            color: cornflowerblue;
+        }
+        .list-group-item{
+            background-color: transparent;
+            border-color: white;
+            border-width: 2px;
+            text-align: center;
+        }
+        .session{
+            margin-right: 2%;
+            border-radius: 8%;
+        }
+        .btn-space {
+            margin-right: 10%;
+        }
+        .navbar-nav li a {
+            color: white;
+            font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+        }   
+        .dropdown-menu {
+            background-color: #07153E;
+        }
+    </style>
+</head>
+	<body>
+		<div id="header">
+            <div id="introduction">
+                <nav class="navbar navbar-expand-sm navbar-dark justify-content-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="KobyChoy.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Education</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="Education(uoft).html">First Year</a>
+                                <a class="dropdown-item" href="Education(uoft2nd).html">Second Year</a>
+                             </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Enrichment(2018).html">Enrichment Experiences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Education(general).html">Extracurricular Activities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="HonorsAndAwards.html">Honors and Awards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactMe.html">Contact Me</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row justify-content-center">
+                    <button id="fall_btn" type="button" class="btn btn-warning center-block btn-space" onclick="showFall()">
+                        <i class="fab fa-canadian-maple-leaf"></i> 
+                        &nbsp; FALL
+                    </button>
+                    <button type="button" id="winter_btn" class="btn btn-info center-block" onclick="showWinter()">
+                        <i class="far fa-snowflake"></i> 
+                        &nbsp; WINTER
+                    </button>
+                </div>
+		</div><br>
+		<div id="content" class="container">
+
+        </div>
+        <div id="2019Winter" class="list-group" style="width: fit-content; display: none;" >
+			<p class="text-center"> The below are the courses that I have taken during 2019 winter. My cumulative GPA(cGPA) by then was <strong>3.97</strong>.</p>
+            <ol>
+                <li class="list-group-item bt" data-toggle="collapse" data-target="#CSC165H1">CSC165H1 Mathematics Expression and Reasoning for Computer Scientists</li>
+                <div id="CSC165H1" class="container collapse show">
+                    <br /><h5>CSC165H1 Mathematics Expression and Reasoning for Computer Scientists</h5>
+                    <p>Instructed by Professor David Liu</p>
+                    <p>
+                        In this course, I have learnt about major mathematical concepts in Computer Science. I got a chance to explore
+                        Proof By Induction, Big O notation, graphs and Trees and more. Even though the course was challenging, I am glad that
+                        I took it, as it is amazing to see how much I was capable to achieved in this short period of time.
+                        My final grade for this course is A.
+                    </p>
+                </div>
+                <li class="list-group-item bt" data-toggle="collapse" data-target="#CSC148H1">CSC148H1 Introduction to Computer Science</li>
+                <div id="CSC148H1" class="container collapse">
+                    <br /><h5>CSC148H1 Introduction to Computer Science</h5>
+                    <p>Instructed by Professor Diane Horton</p>
+                    <p>
+                        After completing the introductory course for Python, I learnt about recursion, trees and linked list in this course.
+                        The assignments in this course were pretty fun. I got to work with a partner. We were given two interesting tasks. The first assignment
+                        was interesting in terms of its complicated structure. Our goal is to analyze the minutes of phone calls for thousands of virtual users, 
+                        and get their bill according to their various phone plans. We had a chance to practise our knowledge in abstract classes and inheritance. Our 
+                        second task, we created a tree map for files and subfolders in a given folder. It is fun to see how rectangles of different sizes and colors 
+                        represents various files. 
+                        My final grade for this course is A.
+                    </p>
+                </div>
+                <li class="list-group-item bt" data-toggle="collapse" data-target="#MAT223H1" >MAT223H1 Linear Algebra I</li>
+                <div id="MAT223H1" class="container collapse">
+                    <br /><h5>MAT223H1 Linear Algebra I</h5>
+                    <p>Instructed by Professor Jiaqi Liu</p>
+                    <p>
+                        Linear Algebra was new for me, because I haven't explore concepts like span and matrixes in a detailed manner during high school. I imagined
+                        it to be really hard, but it turns out to be easier than I thought. Although I was kind of stuck when I encountered dimensions and eigenvectors, I
+                        managed to learn more in the study sessions before the midterms and exams. It really helped me to consolidate the knowledge, and to make sense of different
+                        modules when they all intercept with each other.
+                        My final grade for this course is A+.
+                    </p>
+                </div>
+
+                <li class="list-group-item bt" data-toggle="collapse" data-target="#MUS202H1">MUS202H1 Beethoven</li>  
+                    <div id="MUS202H1" class="container collapse">
+                        <br /><h5>MUS202H1 Beethoven</h5>
+                        <p>Instructed by Professor Remi Chiu</p>
+                        <p>To be frank, I took this course originally to satisfy my br requirements, and therefore I credit-no-credit it in the beginning. However, this course
+                        is more fascinating than I thought it would be.I did not only explored further in Beethoven's music, including his symphonies, his sonatas, but also get a chance
+                        to know more about his personal life and the political environment he was in. Towards the end of the course, my group did a group project on the Immortal Beloved, which is
+                        a series of love letters written by Beethoven to an unknown woman.
+                        I passed the course (no grade as I credit no credit it). 
+                        </p>
+                    </div>
+            </ol>
+        </div>
+        
+        <div id="2018Fall" class="list-group" style="display: none; width:fit-content;">
+			<p class="text-center">The below are the courses that I have taken during 2018 Fall. My cumulative GPA(cGPA) by then was <strong>3.93</strong>.</p>
+            <ol>
+                <li class="list-group-item  bt" data-toggle="collapse" data-target="#CSC108H1">CSC108H1 Introduction to Computer Programming</li>
+                <div id="CSC108H1" class="container collapse show">
+                    <br /><h5>CSC108H1 Introduction to Computer Programming</h5>
+                    <p>Instructed by Professor Jennifer Campbell</p>
+                    <p>
+                        In this course, I have learnt how to program in Python. During the course, I have completed three assignments.
+                        <ol>
+                            <li>Assignment on word finder game (reversing a string, accumulating scores, comparison)</li>
+                            <li>Assignment on analyzing bridge data (arrange it to a clean format, get average, find closer bridge, etc)</li>
+                            <li>Assignment on analyzing tweet data, (opening file, reading file, writing file and categorizing them)</li>
+                        </ol>
+                        My final grade for this course is A+.
+                    </p>
+                </div>
+                <li class="list-group-item bt" data-toggle="collapse" data-target="#STA130H1">STA130H1 Introduction to Statistical Reasoning and Data Science</li>
+                    <div id="STA130H1" class="container collapse">
+                        <br /><h5>STA130H1 Introduction to Statistical Reasoning and Data Science</h5>
+                        <p>Instructed by Professor Natalie Moon</p>
+                        <p>In this course, I have learnt about major statistical concepts like mean, variance, standard deviation and 
+                        hypothesis testing. Apart from that, I have also learnt how to program in R. 
+                        At the end of the course, we have to do a project about online communities. Below is some more information about my project:
+                        My final grade for this course is A. 
+                        </p>
+                    </div>
+                <li class="list-group-item bt" data-toggle="collapse" data-target="#MAT137Y1">MAT137Y1 Calculus</li>
+                    <div id="MAT137Y1" class="container collapse">
+                        <br /><h5>MAT137Y1 Calculus</h5>
+                        <p>Instructed by Professor Alfonso Gracia-Saz</p>
+                        <p>
+                            In this course, I have learnt about the fundamentals of Calculus, which includes limit, differentiation and integration.
+                            Although this course was pretty challenging, I end up enjoying this course a lot. The satisfaction that I have gained after
+                            solving a math problem make me feel like I am the KING of the world!!!!
+                            My final grade for this course is A+.
+                        </p>
+                    </div>
+                <li class="list-group-item bt" data-toggle="collapse" data-target="#CLA204H1">CLA204H1 Introduction to Classical Mythology</li>
+                    <div id="CLA204H1" class="container collapse">
+                        <br /><h5>CLA204H1 Introduction to Classical Mythology</h5>
+                        <p>Instructed by Professor Jennifer Oliver</p>
+                        <p>
+                            In this course, I have learnt more about the Olympian gods and goddesses, greek heroes and the history of Rome. The most
+                            interesting thing about the course is the emphasis on mortal suffering, usually from the gods, from different primary context, and people's views
+                            towards mythologies.
+                            My final grade for this course is A-.
+                        </p>
+                </div>
+                <li class="list-group-item bt" data-toggle="collapse" data-target="#LTE199H1">LTE199H1 1st Year Seminar Course on Genes and Behavior</li>
+                    <div id="LTE199H1" class="container collapse">
+                        <br /><h5>LTE199H1 1st Year Seminar Course on Genes and Behavior</h5>
+                        <p>Instructed by Professor Marla Sokolowski</p>
+                        <p>
+                            In this course, we have looked into concepts like epigenetic, resilience, stress, neuro-plasticity and critical periods.
+                            We have to do two group projects, which is required to give an oral presentation and a submit a written report of our research findings.
+                            In our first project, our group focus on how there can be social causation of diseases, while we work on the importance on social attachments
+                            in our second project.
+                            My final grade for this course is  A.
+                        </p>
+                    </div>
+            </ol>
+        </div><br>
+        <div class="page-footer text-center">
+            <div class="container tw">
+                <div class="container">
+                    <a href="https://github.com/Ikochoy">
+                    <img src="github.png" alt="github" width="40" height="40" hspace="20">
+                    </a>
+                    <a href="https://www.linkedin.com/in/koby-choy-39912416b/">
+                        <img src="linkedin.png" alt="linkedin" width="45" height="40">
+                    </a>
+                </div><br>
+                © Created by Koby Choy
+            </div>
+
+	</body>
+</html> 

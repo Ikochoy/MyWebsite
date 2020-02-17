@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Undergraduate Education</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/80f2a73f08.js"></script>
+    <script>
+        function showWinter(){
+            var container = document.getElementById("content");
+            container.innerHTML = "<br><br><h3 class='text-center'><i class='fab fa-earlybirds'></i>" + "&nbsp;&nbsp;Taking the courses currently</h3><br>";
+            document.getElementById("2019Fall").style.display="none";
+        }
+        function showFall(){
+            var container = document.getElementById("content");
+            container.innerHTML = document.getElementById("2019Fall").innerHTML;
+            // document.getElementById('2019Winter').style.display = "none";
+        }
+
+        $('document').ready(function() {
+            showFall();
+        });
+    </script>
+    <style type="text/css">
+        .navBorder {
+            border-bottom-color: grey;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+        }
+
+        .d-inline {
+            display: inline-block;
+        }
+        body{
+            background-image: url(education.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            color: white;
+            font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+        }
+        .bt {
+            color: cornflowerblue;
+        }
+        .list-group-item{
+            background-color: transparent;
+            border-color: white;
+            border-width: 2px;
+            text-align: center;
+        }
+        .btn-space {
+            margin-right: 10%;
+        }
+        .navbar-nav li a {
+            color: white;
+            font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+        }   
+        .dropdown-menu {
+            background-color: #07153E;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="introduction">
+            <nav class="navbar navbar-expand-sm navbar-dark justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="KobyChoy.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Education</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="Education(uoft).html">First Year</a>
+                            <a class="dropdown-item" href="Education(uoft2nd).html">Second Year</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Enrichment(2018).html">Enrichment Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Education(general).html">Extracurricular Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Education(general).html">Honors and Awards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactMe.html">Contact Me</a>
+                    </li>
+                </ul>
+            </nav>
+        </div><br />
+    </div>    
+        <div class="row justify-content-center">
+            <button id="fall_btn" type="button" class="btn btn-warning center-block btn-space" onclick="showFall()">
+                <i class="fab fa-canadian-maple-leaf"></i> 
+                &nbsp; FALL
+            </button>
+            <button type="button" id="winter_btn" class="btn btn-info center-block" onclick="showWinter()">
+                <i class="far fa-snowflake"></i> 
+                &nbsp; WINTER
+            </button>
+        </div>
+    <br>
+    </div>
+    <div id="content" class="container">
+
+    </div>
+    <div id="2019Fall" class="list-group" style="display: none;">
+        <p class="text-center">The below are the courses that I have taken during 2019 Fall. My cumulative GPA(cGPA) by then was <strong>3.90</strong></p>
+        <ol>
+            <li class="list-group-item bt" data-toggle="collapse" data-target="#CSC207H1">CSC207H1 Software Design</li>
+            <div id="CSC207H1" class="container collapse show">
+                <br /><h5>CSC207H1 Software Design</h5>
+                <p>Instructed by Professor Paul Gries</p>
+                <p>
+                    In this course, I have learnt about different design principles and the clean architecture. I enjoyed this course a
+                    lot as we get to program our own game from scratch in Android Studio without any guidelines together as a team.
+                    Our team nailed the assignment!!! The development process was fun, especially the brainstorming part, where we get
+                    to discuss how our games look like, how we can implement different design principles. 
+                    My final grade for this course is A.
+                </p>
+            </div>
+            <li class="list-group-item bt" data-toggle="collapse" data-target="#STA247H1">STA247H1 Probability with Computer Application</li>
+            <div id="STA247H1" class="container collapse">
+                <br /><h5>STA247H1 Probability with Computer Application</h5>
+                <p>Instructed by Professor Karen H. Wong</p>
+                <p>
+                    In this course, I have about counting strategies and different types of distributions such as gamma, normal, binomial and poisson.
+                    Eventhough the course materials are challenging, especially when we start to go through moment generating functions, I found the couse
+                    pretty interesting. I did  the two assignments pretty well, but exam turned out to be really hard.  Well, I managed to survive.
+                    My final grade for this course is A+.
+                </p>
+            </div>
+            <li class="list-group-item bt" data-toggle="collapse" data-target="#CSC258H1">CSC258H1 Computer Organization</li>
+            <div id="CSC258H1" class="container collapse">
+                <br /><h5>CSC258H1 Computer Organization</h5>
+                <p>Instructed by Professor Maziar Goudarzi</p>
+                <p>
+                    In this course, I have learnt about the hardware part of computers. From gates, to transistors, to processors and memory, we get to have hands on experience on these
+                    components to form useful devices and circuits. Programming in Verilog and Assembly Language is quite challenging as it is very different from programming in java 
+                    and python.
+                    My final grade for this course is A-.
+                </p>
+            </div>
+            <li class="list-group-item bt" data-toggle="collapse" data-target="#ROP299Y1">ROP299Y1 Research Opportunity Program</li>
+            <div id="ROP299Y1" class="container collapse">
+                <br /><h5>Research Opportunity Program (in Political Science Department)</h5>
+                <p>Supervised by Professor Lynette Ong</p>
+                <p>
+                    This is a reserach course. In this course, I was responsible of cleaning the data and analyzing them. Every week, I read up to 100 news articles,
+                    and extract the information that we are interested in into an excel file. I wrote a simple program in python, to help me triangulate the keywords,
+                    and write it into the file, so what I have to do is to check the accuracy of the program. It was very interesting, as I had no experience in dealing
+                    with datasets this massive.
+                </p>
+            </div>
+            <li class="list-group-item bt" data-toggle="collapse" data-target="#CSC236H1">CSC236H1 Introduction to theories of Computer Science</li>
+            <div id="CSC236H1" class="container collapse">
+                <br /><h5>CSC236H1 Introduction to theories of Computer Science</h5>
+                <p>Instructed by Professor </p>
+                <p>
+                    In this course, we've gone through different proving stragtegies, finite state automata, the regularity of a language, together with program correctness and 
+                    program running time. I am a little bit weak at coming up with a DFA to a problem, but as I got to do more practise in the tutorials, I improved my skills. 
+                    My final grade for this course is B+.
+                </p>
+            </div>
+        </ol>
+    </div><br />
+    
+        <div class="page-footer text-center">
+            <div class="container tw">
+                <div class="container">
+                    <a href="https://github.com/Ikochoy">
+                    <img src="github.png" alt="github" width="40" height="40" hspace="20">
+                    </a>
+                    <a href="https://www.linkedin.com/in/koby-choy-39912416b/">
+                        <img src="linkedin.png" alt="linkedin" width="45" height="40">
+                    </a>
+                </div><br>
+                © Created by Koby Choy
+            </div>
+</body>
+</html>

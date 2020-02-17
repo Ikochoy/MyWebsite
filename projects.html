@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Koby's Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+         .navbar-nav li a {
+            color: white;
+            font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+        }    
+        .dropdown-menu {
+            background-color: transparent;
+        }
+        .navBorder{
+            border-bottom-color:grey;
+            border-bottom-style:solid;
+            border-bottom-width:1px;
+        }
+        .d-inline{
+            display:inline-block;
+        }
+        .cp{
+            background:   linear-gradient(to right, #6f5bfb, #0090ff, #00b7ff, #00d7ff);
+            color: white;
+            outline: none;
+            border:none;
+        }
+        
+        body{
+            background-image: url(projects.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            color: white;
+            font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+        }
+        .bt{
+            color:navy;
+        }
+        .card-text{
+         font-size:12px;
+        }  
+        .card:hover{
+            transform: scale(1.1);
+        }
+        .card-title{
+            font-size: 16px;
+        }
+        .card {
+            max-width: 20%;
+        }
+        .card-img-top{
+            margin-left: auto;
+            margin-right: auto ;
+            display:block;
+        }
+
+        .pagination a {
+            color: white;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            background-color: transparent;
+            border: transparent;
+        }
+        .pagination a.active {
+            background-color: aqua;
+            color: navy;
+        }
+        .pagination a:hover:not(.active) {
+            background-color: white;
+            color:black;
+            }
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark justify-content-center">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="KobyChoy.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Education</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="Education(uoft).html">First Year</a>
+                    <a class="dropdown-item" href="Education(uoft2nd).html">Second Year</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Enrichment(2018).html">Enrichment Experiences</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Education(general).html">Extracurricular Activities</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="HonorsAndAwards.html">Honors and Awards</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contactMe.html">Contact Me</a>
+            </li>
+        </ul>
+    </nav><br><br><br>
+        <div class="container">
+          <div class="row card-deck">
+              <div id="card1" class="card" style="width:25%">
+                  <img class="card-img-top" src="stock.JPEG" alt="Card image" style="width:60%">
+                  <div class="card-body">
+                      <h4 class="card-title bt">Three Eyed Raven</h4>
+                      <p class="card-text bt">
+                          Individual Project <br />
+                          forecast the closing price of Tencent Holdings.
+                          Use of the numpy, sklearn and pandas library to handle the data
+                      </p>
+                      <a href="https://github.com/Ikochoy/Three-Eyed-Raven" class="btn cp mx-auto d-block">See Project</a>
+                  </div>
+              </div>
+              <div id="card2" class="card" style="width:25%">
+                  <img class="card-img-top" src="uoft.JPEG" alt="Card image" style="width:60%">
+                  <div class="card-body">
+                      <h4 class="card-title bt"> UofT Survival Guide</h4>
+                      <p class="card-text bt">
+                          Group Project (A team of six)<br />
+                          wrote a game aiming to simulate the student lives of
+                          a typical UofT student. used Android Studio and java.</p>
+                          <a href="https://github.com/Ikochoy/Three-Eyed-Raven" class="btn cp mx-auto d-block">See Project</a>
+                  </div>
+              </div>
+          </div>
+        </div><br><br><br><br>
+        <div id="pagination">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
+        </div><br><br>
+        <div class="page-footer text-center">
+            <div class="container tw">
+                <div class="container">
+                    <a href="https://github.com/Ikochoy">
+                    <img src="github.png" alt="github" width="40" height="40" hspace="20">
+                    </a>
+                    <a href="https://www.linkedin.com/in/koby-choy-39912416b/">
+                        <img src="linkedin.png" alt="linkedin" width="45" height="40">
+                    </a>
+                </div><br>
+                © Created by Koby Choy
+            </div>
+
+
+</body>
+</html> 
