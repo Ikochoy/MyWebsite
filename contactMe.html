@@ -82,15 +82,15 @@
                     <a class="nav-link" href="contactMe.html">Contact Me</a></li>
 			</ul>
         </nav><br><br><br>
-        <div class="container wt text-center">
+        <!-- <div class="container wt text-center">
             <img src="contact.svg" style="width: 30%;"><br><br><br>
             <i class="fas fa-inbox"></i> &nbsp; Email: kwan.choy@mail.utoronto.ca <br><br>
             <i class="fas fa-phone-alt"></i> &nbsp; Phone Number: (+1) 437-986-3083<br><br>
             <i class="fab fa-linkedin"></i> &nbsp; Linkedin Name: Koby Choy 
-        </div><br><br><br><br>
-        <!-- <form action="" method="POST" class="container wt text-center"> -->
-        <!-- <img src="contact.svg" style="width: 30%;"><br><br> -->
-        <!-- <label for="name" class="justify-content-left">Name</label>
+        </div><br><br><br><br> -->
+        <form action="https://mailthis.to/kwan.choy@mail.utoronto.ca"  method="POST" class="container wt text-center">
+        <img src="contact.svg" style="width: 30%;"><br><br>
+        <label for="name" class="justify-content-left">Name</label> 
         <i class="fas fa-user-alt"></i><br>
         <input type="text" id="name" name="name" placeholder="Your name.."> <br><br>
 
@@ -105,18 +105,7 @@
 
         <input type="submit" value="SEND"/>
         </form><br>
-        <?php $name = $_POST['name'];
-        $email = $_POST['email'];
-        $message = $_POST['message'];
-        $formcontent="From: $name \n Message: $message";
-        $recipient = "kwan.choy@mail.utoronto.ca";
-        $subject = "Contact Form ($name)";
-        $mailheader = "From: $email \r\n";
-        mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-        echo "Thank You!"; -->
-        <!-- ?> -->
-        <!-- Send me an email to <strong>kwan.choy@mail.utoronto.ca</strong>
-         -->
+        
         <div class="page-footer text-center wt">
             <div class="container tw">
                 <div class="container">
